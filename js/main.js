@@ -10,7 +10,7 @@ function validateEmail(form_id, email) {
    } else {
          document.getElementById("message").innerHTML = "E-mail введен корректно";      
       }  
-   return reg.test(address);
+   return true;
 }
 
 // Примитивная валидация поля password и имитация проверки пароля (любой пароль от 8 до 15 символов)
