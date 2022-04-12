@@ -21,11 +21,11 @@ function validatePassword() {
      return false;  
    }       
    if(pw.length < 8) {  
-     document.getElementById("message_1").innerHTML = "*Не верный пароль";  
+     document.getElementById("message_1").innerHTML = "*Неверный пароль";  
      return false;  
    }     
    if(pw.length > 15) {  
-     document.getElementById("message_1").innerHTML = "*Не верный пароль, повторите попытку позже";  
+     document.getElementById("message_1").innerHTML = "*Неверный пароль, повторите попытку позже";  
      return false;  
    }  else {
       document.getElementById("message_1").innerHTML = "";
