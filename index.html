@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="ru">
+
+    <head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" href="css/style.css">
+    	<title>Альфа - Банк</title>
+    </head>
+
+    <body>
+        <div class="container" id="container">
+
+        	<div class="form-container sign-in-container">
+        		<form action="/processjson" id="form_id"  onsubmit="javascript:return validateEmail('form_id','email'), validatePassword();">
+
+        			<h1>Вход</h1>
+
+        			<input type="email" id="email" name="email" placeholder="Логин (E-mail)" />
+        			<div id="message"></div>
+        			<input type="password" id="pswd"  placeholder="Пароль (Password)" />
+        			<div id="message_1"></div>
+        			<button type="submit" value="Submit">Войти</button>	
+
+        		</form>
+        	</div>
+
+        	<div class="overlay-container">
+        		<div class="overlay">
+        			<div class="overlay-panel overlay-right">	
+        				<img class="alfa" src="img/logo-alt-ru.png" alt="alfa">
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <footer>
+        	<p>
+        	Интернет-банк «Альфа-Банк»
+        	</p>
+        </footer>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
